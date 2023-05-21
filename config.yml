@@ -1,0 +1,14 @@
+baseURL: "https://shakti.dev/"
+title: Shivam Shakti
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: Hi!
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/shivam-shakti-999140b8/"
+    - name: github
+      url: "https://github.com/sh4x2"
+

@@ -1,5 +1,5 @@
 baseURL: "https://sh4x2.dev/"
-title: Shivam Shakti
+title: sh4x2
 theme: PaperMod
 
 params:
@@ -7,8 +7,6 @@ params:
     Title: Hi!
 
   socialIcons:
-    - name: linkedin
-      url: "https://www.linkedin.com/in/shivam-shakti-999140b8/"
     - name: github
       url: "https://github.com/sh4x2"
 

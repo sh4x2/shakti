@@ -10,3 +10,5 @@ params:
     - name: github
       url: "https://github.com/sh4x2"
 
+  assets:
+    favicon: "/assets/favicon.ico"

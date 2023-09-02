@@ -58,7 +58,25 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 ```
 
-Key thing to notice here is the `build-system` specification. This is used to specify the requirements as to which build backend is supposed to be used. In `setup.py`, you had to assume that this requirement was already satisfied before attempting to build the package. Using `pyproject.toml` makes it easier for tools like `pip` to first fetch the build backend requirements before attempting to build the package.
+Key thing to notice here is the `build-system` specification. This is used to specify the requirements as to which build backend is supposed to be used. In `setup.py`, you had to assume that this requirement was already satisfied before attempting to build the package. Using `pyproject.toml` makes it easier for tools like `pip` or `poetry` to first fetch the build backend requirements before attempting to build the package.
+ 
+
+## Poetry
+
+I was using simple old `pip` up until recently. Yes, it gives you occassional headaches but for most simpler projects it was sufficient. Combine it with `pyenv` and `pyenv-virtualenv` and it makes it straightforward to setup and start working on a new project. Part of the problem with `pip` is also its simplicity. So you have to always combine it with other libraries to improve your life. Sometimes I don't care so much about a light-weight setup and just have all the features in place for me to start development.
+
+For a very long time I tried avoiding the switch to anything else but given the popularity of Poetry, it is not too far away (if not already) that most people will start using it. It has got most of the tools in one place and with support to add more plugins I can imagine things only getting better. Now I am not diving deep into features of Poetry, you the documentation for that. But here are is how I usually use it.
+
+I still manage python versions using `pyenv` because I love the simplicity, however, I use the virtualenv feature of `poetry` because it does the automatic switching.
+```
+pyenv install 3.10.10
+poetry env use 3.10.10
+```
+
+Another thing I like about poetry is grouping dependencies together, this is way better than `requirements-{suffix}.txt`.
+```
+poetry add droidio==2.2.0 --group dev 
+```
 
 
 ## Distribution

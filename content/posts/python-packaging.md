@@ -2,6 +2,7 @@
 title: Python Packaging
 summary: Understanding `pyproject.toml`, distribution, build frontend and backends
 date: 2023-07-28
+draft: true
 ---
 
 Some time ago I started seeing `pyproject.toml` in almost every Python package and also tools like [Poetry](https://python-poetry.org/) getting common. So, I started using it too but wondered what happened to `setup.py` and simple old `pip`.

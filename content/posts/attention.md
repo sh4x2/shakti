@@ -1,8 +1,8 @@
-
 ---
 title: Attention
 summary: Coding Multi-Head Attention mechanism in Pytorch
 date: 2025-08-21
+draft: true
 ---
 
 
